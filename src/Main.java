@@ -1,4 +1,3 @@
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -7,7 +6,8 @@ public class Main {
 		basePizza.addExtraToppings();
 		basePizza.TakeAway();
 		basePizza.getBill();
-
+		
+//		DeluxePizza dp = new DeluxePizza(true);
+//		dp.getBill();
 	}
-
 }

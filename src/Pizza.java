@@ -10,8 +10,6 @@ public class Pizza {
 	private boolean isExtraToppingsAdeed = false;
 	private boolean isTakeAwayOpted = false;
 	
-
-	
 	public Pizza(Boolean veg) {		
 		this.veg = veg;
 		if(this.veg) {
@@ -30,8 +28,7 @@ public class Pizza {
 	}
 	public void addExtraToppings() {
 		isExtraToppingsAdeed = true;		
-		this.price += extraToppingsPrice;
-		
+		this.price += extraToppingsPrice;		
 	}
 	public void TakeAway() {
 		isTakeAwayOpted = true;		
@@ -50,13 +47,18 @@ public class Pizza {
 			bill += "Take away opted: "+ backPackPrice +"\n";
 		}
 		bill += "Bill: " + this.price + "\n";
-		System.out.println(bill);
-		
-			
+		System.out.println(bill);					
 	}
-	
-
-		
 }
+
+/*
+ * Pizza veg: 300;
+ * Pizza non veg: 400;
+ * Extra cheese: 100;
+ * Extra toppings: 150;
+ * Take away: 20;
+ * Deluxe pizza includes extra cheese and extra toppings;
+ * 
+ */
 	
 	
